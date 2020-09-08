@@ -1,0 +1,32 @@
+header{
+    margin-bottom: 30px;
+    font-family: "M PLUS 1p";  
+}
+
+img{
+    width: 50px;
+    margin: 0,0,0,auto;
+}
+
+.row{
+    background-color: #1DA1F2;
+    color: #fff;
+    padding: 20px;
+    font-size:18px;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.container .overview{
+    font-size: 20px;
+}
+
+.container .explanation{
+    font-size: 15px;
+}
+
+.align-right{
+    text-align: right;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177405752-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177405752-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進級判定サービス</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>進級判定サービス</h1>
+                </div>
+
+                <div class="col-sm-4 align-right">
+                    <a href="https://twitter.com/" target="_blank"><img border="0"
+                            src="images/Twitter_Logo_WhiteOnBlue.png" alt="Twitterアイコン"></a>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <div class="container">
+        <p class="overview">
+            このサービスは神戸大学工学部情報知能工学科の学生の進級を助ける為のサービスです。<br>
+            進級要件を満たす為に必要な残り単位数を単位種別毎に表示します。<br>
+        </p>
+
+        <h4>＜使い方＞</h4>
+
+        <p class="explanation">
+            まずは<a href="http://www.office.kobe-u.ac.jp/stdnt-kymsys/student/student.html"
+                target="_blank">うりぼーねっと</a>を開いて自分の成績を確認してください。<br>
+            取得できている(可以上もしくは合)単位にチェックを入れて、判定ボタンを押せば結果が出ます。<br>
+        </p>
+
+        <label for="all"><input type="checkbox" name="allChecked" id="all">全選択</label>
+
+        <p id="circleone">
+
+            <input type="checkbox" id="seminar" name="circleone[]" value="1">
+            <label for="seminar">初年次セミナー</label><br>
+
+            <input type="checkbox" id="rikigakukiso1" name="circleone[]" value="1">
+            <label for="rikigakukiso1">力学基礎1</label><br>
+
+            <input type="checkbox" id="rikigakukiso2" name="circleone[]" value="1">
+            <label for="rikigakukiso2">力学基礎2</label><br>
+
+            <input type="checkbox" id="denjiki1" name="circleone[]" value="1">
+            <label for="denjiki1">電磁気学基礎1</label><br>
+
+            <input type="checkbox" id="denjiki2" name="circleone[]" value="1">
+            <label for="denjiki2">電磁気学基礎2</label><br>
+
+            <input type="checkbox" id="biseki1" name="circleone[]" value="1">
+            <label for="biseki1">微分積分1</label><br>
+
+            <input type="checkbox" id="biseki2" name="circleone[]" value="1">
+            <label for="biseki2">微分積分2</label><br>
+
+            <input type="checkbox" id="biseki3" name="circleone[]" value="1">
+            <label for="biseki3">微分積分3</label><br>
+
+            <input type="checkbox" id="biseki4" name="circleone[]" value="1">
+            <label for="biseki4">微分積分4</label><br>
+
+            <input type="checkbox" id="senkei1" name="circleone[]" value="1">
+            <label for="senkei1">線形代数1</label><br>
+
+            <input type="checkbox" id="senkei2" name="circleone[]" value="1">
+            <label for="senkei2">線形代数2</label><br>
+
+            <input type="checkbox" id="senkei3" name="circleone[]" value="1">
+            <label for="senkei3">線形代数3</label><br>
+
+            <input type="checkbox" id="senkei4" name="circleone[]" value="1">
+            <label for="senkei4">線形代数4</label><br>
+
+            <input type="checkbox" id="proen1" name="circleone[]" value="0.5">
+            <label for="proen1">プログラミング演習1</label><br>
+
+            <input type="checkbox" id="proen2" name="circleone[]" value="0.5">
+            <label for="proen2">プログラミング演習2</label><br>
+
+            <input type="checkbox" id="proen3" name="circleone[]" value="0.5">
+            <label for="proen3">プログラミング演習3</label><br>
+
+            <input type="checkbox" id="proen4" name="circleone[]" value="0.5">
+            <label for="proen4">プログラミング演習4</label><br>
+
+            <input type="checkbox" id="risan" name="circleone[]" value="2">
+            <label for="risan">離散数学</label><br>
+
+            <input type="checkbox" id="ouyoukaiseki" name="circleone[]" value="2">
+            <label for="ouyoukaiseki">応用解析学</label><br>
+
+            <input type="checkbox" id="buturijikken" name="circleone[]" value="2">
+            <label for="buturijikken">物理学実験</label><br>
+
+            <input type="checkbox" id="jyoubi" name="circleone[]" value="2">
+            <label for="jyoubi">常微分方程式論</label><br>
+
+            <input type="checkbox" id="ouyouarugo" name="circleone[]" value="0.5">
+            <label for="ouyouarugo">応用アルゴリズム演習</label><br>
+
+            <input type="checkbox" id="hukuso" name="circleone[]" value="2">
+            <label for="hukuso">複素関数論</label><br>
+
+            <input type="checkbox" id="suuchikaiseki" name="circleone[]" value="2">
+            <label for="suuchikaiseki">数値解析</label><br>
+
+            <input type="checkbox" id="jikkena1" name="circleone[]" value="1">
+            <label for="jikkena1">総合実験A1</label><br>
+
+            <input type="checkbox" id="enshua1" name="circleone[]" value="0.5">
+            <label for="enshua1">総合演習A1</label><br>
+
+            <input type="checkbox" id="jikkena2" name="circleone[]" value="1">
+            <label for="jikkena2">総合実験A2</label><br>
+
+            <input type="checkbox" id="enshua2" name="circleone[]" value="0.5">
+            <label for="enshua2">総合演習A2</label><br>
+
+            <input type="checkbox" id="jikkenb1" name="circleone[]" value="1">
+            <label for="jikkenb1">総合実験B1</label><br>
+
+            <input type="checkbox" id="enshub1" name="circleone[]" value="0.5">
+            <label for="enshub1">総合演習B1</label><br>
+
+            <input type="checkbox" id="jikkenb2" name="circleone[]" value="1">
+            <label for="jikkenb2">総合実験B2</label><br>
+
+            <input type="checkbox" id="enshub2" name="circleone[]" value="0.5">
+            <label for="enshub2">総合演習B2</label><br>
+
+            <div id = "app">
+                <button @click = "countCircleone()">◎1単位を計測</button>
+                <p id = "resultOne"></p>
+            </div>
+
+            
+        </p>
+
+        <div class='resultcircleone'></div>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <script>
+            //全選択用関数
+            $(function () {
+                // 1. 「全選択」する
+                $('#all').on('click', function () {
+                    $("input[name='circleone[]']").prop('checked', this.checked);
+                });
+                // 2. 「全選択」以外のチェックボックスがクリックされたら、
+                $("input[name='chk[]']").on('click', function () {
+                    if ($('#boxes :checked').length == $('#boxes :input').length) {
+                        // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
+                        $('#all').prop('checked', true);
+                    } else {
+                        // 1つでもチェックが入っていたら、「全選択」 = checked
+                        $('#all').prop('checked', false);
+                    }
+                });
+            });
+        
+            //◎1単位計測用の関数
+            var app = new Vue({
+                el: "#app",
+                methods:{
+                    countCircleone: function(){
+                        var sumOne = 0;
+                        var countOne = document.getElementsByName('circleone[]');
+                        for(i = 0; i < countOne.length; i++){
+                            if(countOne[i].checked){
+                                sumOne = sumOne + Number(countOne[i].value);
+                            }
+                        }
+
+                        var remainOne = 33.5 - sumOne;
+
+                        document.getElementById("resultOne").textContent = "◎1は残り" + remainOne + "単位必要です";
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>
